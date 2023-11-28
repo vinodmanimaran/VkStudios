@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
 import React from 'react';
-import Image from 'next/image'
+import Image from 'next/image';
 import Contact2 from '../../../assets/Pricing/schedule.svg';
-
 
 const Pricing = () => {
   const pricingTiers = [
@@ -54,11 +53,11 @@ const Pricing = () => {
           <h3 className="text-2xl font-bold text-center mb-4">What Our Clients Say</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg py-8 px-6 rounded-lg">
-              <p className="text-lg">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lobortis arcu."</p>
+              <p className="text-lg">&ldquo;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed lobortis arcu.&rdquo;</p>
               <p className="text-gray-600 mt-4">- John Doe, CEO of Company A</p>
             </div>
             <div className="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-lg py-8 px-6 rounded-lg">
-              <p className="text-lg">"Vestibulum at luctus metus. Ut tempus diam sit amet metus semper, vel efficitur neque commodo."</p>
+              <p className="text-lg">&ldquo;Vestibulum at luctus metus. Ut tempus diam sit amet metus semper, vel efficitur neque commodo.&rdquo;</p>
               <p className="text-gray-600 mt-4">- Jane Smith, CTO of Company B</p>
             </div>
           </div>

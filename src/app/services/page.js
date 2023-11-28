@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 import {
   FaDesktop,
@@ -166,7 +167,7 @@ const ServicePage = () => {
               key={index}
               className="p-4 border border-white rounded-lg transition-transform transform hover:scale-105"
             >
-              <img
+              <Image
                 src={item.imageSrc}
                 alt={item.title}
                 className="w-full h-auto mb-4"
