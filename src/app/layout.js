@@ -1,21 +1,21 @@
-'use client';
-
-import React from 'react';
+// Remove 'use client' directive
+// import React from 'react';
 import './globals.css';
 import 'tailwindcss/tailwind.css';
 import { Inter } from 'next/font/google';
 import Navbar from '../components/navbar';
 import Footer from '../components/Footer';
-import { Providers } from './providers'
+import { Providers } from './providers';
 
-import Head from 'next/head'
+import Head from 'next/head';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata = {
-  title: 'Vinod Kumar Studios | Web and Mobile App Development Freelancer',
-  description: 'Experienced freelancer offering professional web and mobile app development services.',
-};
+// Remove export of 'metadata'
+// export const metadata = {
+//   title: 'Vinod Kumar Studios | Web and Mobile App Development Freelancer',
+//   description: 'Experienced freelancer offering professional web and mobile app development services.',
+// };
 
 export default function RootLayout({ children }) {
   const themeClass = ''; // Remove isDarkMode and related code
@@ -27,8 +27,7 @@ export default function RootLayout({ children }) {
       </Head>
       <body className={`${inter.className} bg-gradient-to-r from-black to-gray-900`}>
         <Navbar />
-                <Providers>{children}</Providers>
-
+        <Providers>{children}</Providers>
         <Footer />
       </body>
     </html>
