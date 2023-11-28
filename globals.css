@@ -1,5 +1,13 @@
-    @font-face {
-        font-family: 'hero';
-        src: url('/fonts/font.ttf');
-      }
-      
+/* globals.css */
+
+/* Import Tailwind CSS styles */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Your custom global styles */
+body {
+  /* Add any global styles here */
+}
+
+/* Neumorphic effect styles */

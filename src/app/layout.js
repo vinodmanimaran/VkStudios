@@ -2,14 +2,14 @@
 // import React from 'react';
 import './globals.css';
 import 'tailwindcss/tailwind.css';
-import { Inter } from 'next/font/google';
+import { Bodoni_Moda, Inter, Merriweather } from 'next/font/google';
 import Navbar from '../components/navbar';
 import Footer from '../components/Footer';
 import { Providers } from './providers';
 
 import Head from 'next/head';
 
-const inter = Inter({ subsets: ['latin'] });
+const Meri = Merriweather({ subsets: ['latin'] ,weight:'300'});
 
 // Remove export of 'metadata'
 // export const metadata = {
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <Head>
         <link rel="stylesheet" href="../../public/fonts/font.css" />
       </Head>
-      <body className={`${inter.className} bg-gradient-to-r from-black to-gray-900`}>
+      <body className={`${Meri.className} bg-gradient-to-r from-black to-gray-900`}>
         <Navbar />
         <Providers>{children}</Providers>
         <Footer />

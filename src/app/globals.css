@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap');
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -26,5 +27,25 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+ @layer utilities{
+  .font-bodoni {
+    font-family: 'Bodoni Moda', serif;
+ }
+
+ }
+/* hero-section.css */
+
+.bg-header1 {
+  background-image: url('../../assets/home/head.png');
+}
+
+.bg-header2 {
+  background-image: url('../../assets/home/headd2.png');
+}
+
+.bg-header3 {
+  background-image: url('../../assets/home/hero.jpg');
 }
 

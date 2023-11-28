@@ -1,10 +1,10 @@
 "use client"
-import React, { useState } from 'react';
-import Contact1 from '../../../assets/Contact/social-media-notifications.svg';
-import Contact2 from '../../../assets/Contact/socialmedia-marketing.svg';
 
+import React, { useState } from 'react';
 import Image from 'next/image';
 import emailjs from 'emailjs-com';
+import Contact1 from '../../../assets/Contact/contactus_email.svg';
+import Contact2 from '../../../assets/Contact/location_map.svg';
 
 const Contact = () => {
   const [name, setName] = useState('');
@@ -15,10 +15,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Your email submission logic here
-    console.log('Submitted:', name, email, message);
-
-    // Send email using EmailJS
     emailjs
       .send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
         from_name: name,
@@ -81,24 +77,10 @@ const Contact = () => {
             title="Google Maps"
           ></iframe>
         </div>
-        <div className="flex justify-start mt-[-35%]">
+        <div className="flex justify-start mt-[-28%]">
           <Image src={Contact2} alt="contact-us" width={600} />
         </div>
-
       </div>
-
-      {/* <div className="bg-gray-800 m-8 bg-opacity-50 backdrop-filter backdrop-blur-lg py-8 px-6 max-w-full  rounded-lg">
-        <h2 className="text-3xl font-bold mb-6 text-white">Business Hours</h2>
-        <ul className="text-lg text-white">
-          <li>Monday - Friday: 9:00 AM - 6:00 PM</li>
-          <li>Saturday: 10:00 AM - 4:00 PM</li>
-          <li>Sunday: Closed</li>
-        </ul>
-        <div className="flex justify-end mt-[-35%] w-full max-w-[600px]">
-          <Image src={Contact1} alt="contact-us" width={600} />
-        </div>
-
-      </div> */}
     </div>
   );
 };

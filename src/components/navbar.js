@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image'
 import logo from '../../assets/Logo/Logo.png'
 
-import { FaFacebook, FaInstagram, FaLinkedin, FaGithub, FaSun, FaMoon } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaGithub, FaSun, FaMoon, FaRobot } from 'react-icons/fa';
 import { RiMenu2Line, RiCloseLine } from 'react-icons/ri';
 
 const Navbar = () => {
@@ -40,24 +40,24 @@ const Navbar = () => {
         </Link>
 
         {/* Social media links */}
-        <div className="flex items-center space-x-4  mx-5">
+        <div className="flex items-center space-x-4  mx-5 ">
           <span
-            className={`nav-link-icon hover:text-white`}
+            className={`nav-link-icon hover:text-white  cursor-pointer`}
           >
             <FaFacebook />
           </span>
           <span
-            className={`nav-link-icon hover:text-white`}
+            className={`nav-link-icon hover:text-white cursor-pointer`}
           >
             <FaInstagram />
           </span>
           <span
-            className={`nav-link-icon hover:text-white`}
+            className={`nav-link-icon hover:text-white cursor-pointer`}
           >
             <FaLinkedin />
           </span>
           <span
-            className={`nav-link-icon hover:text-white`}
+            className={`nav-link-icon hover:text-white cursor-pointer`}
           >
             <FaGithub />
           </span>
@@ -70,7 +70,7 @@ const Navbar = () => {
         >
           {isDarkMode ? <FaMoon /> : <FaSun />}
         </button>
-
+        <span className="nav-link-icon hover:text-white cursor-pointer mx-8"><FaRobot/>    <h5 className="text-[15px] font-semibold text-gray-800 hover:text-blue-600 transition duration-300 mx-[-20px]">Talk with me</h5></span>
         {/* Mobile menu button */}
         <div className="md:hidden">
           <button

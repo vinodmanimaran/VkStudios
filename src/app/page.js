@@ -12,7 +12,7 @@ import NewsLetter from '../components/Newsletter';
 
 const Page = () => {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-4 ">
       <Header />
       <Hero />
       <div className="mt-12">

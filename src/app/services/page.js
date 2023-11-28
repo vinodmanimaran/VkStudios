@@ -1,5 +1,3 @@
-'use client';
-
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
@@ -7,12 +5,8 @@ import {
   FaDesktop,
   FaMobileAlt,
   FaCheckCircle,
-  FaLaptop,
-  FaGem,
   FaCogs,
-  FaDatabase,
   FaChartLine,
-  FaCode,
 } from 'react-icons/fa';
 
 const ServicePage = () => {
@@ -20,17 +14,17 @@ const ServicePage = () => {
     {
       title: 'Project 1',
       description: 'Description of project 1.',
-      imageSrc: 'project1.jpg', // Replace with actual image source
+      // imageSrc: 'project1.jpg', // Replace with actual image source
     },
     {
       title: 'Project 2',
       description: 'Description of project 2.',
-      imageSrc: 'project2.jpg', // Replace with actual image source
+      // imageSrc: 'project2.jpg', // Replace with actual image source
     },
     {
       title: 'Project 3',
       description: 'Description of project 3.',
-      imageSrc: 'project3.jpg', // Replace with actual image source
+      // imageSrc: 'project3.jpg', // Replace with actual image source
     },
     // Add more portfolio items as needed
   ];
@@ -38,7 +32,7 @@ const ServicePage = () => {
   const clientTestimonials = [
     {
       name: 'Sara Smith',
-      comment: 'He did an exceptional job with my website. His attention to detail and creative skills brought my vision to life. I couldnt be happier with the result.',
+      comment: 'He did an exceptional job with my website. His attention to detail and creative skills brought my vision to life. I couldn\'t be happier with the result.',
     },
     {
       name: 'Michael Johnson',
@@ -46,7 +40,7 @@ const ServicePage = () => {
     },
     {
       name: 'Emily Davis',
-      comment: 'His custom development work exceeded my expectations. He understood my unique needs and delivered a solution that perfectly suits my business. I m grateful for his expertise.',
+      comment: 'His custom development work exceeded my expectations. He understood my unique needs and delivered a solution that perfectly suits my business. I\'m grateful for his expertise.',
     },
     {
       name: 'Alex Wilson',
@@ -60,14 +54,13 @@ const ServicePage = () => {
       name: 'Daniel Clark',
       comment: 'His custom development work streamlined our operations. He took the time to understand our business needs and delivered a solution that improved our efficiency.',
     },
-  
   ];
-  
+
   return (
     <div className="bg-gray-800 m-8 bg-opacity-50 backdrop-filter backdrop-blur-lg py-8 px-6 rounded-lg text-white">
       {/* Header Section */}
       <header className="text-center mb-8">
-        <h1 className="text-3xl font-semibold">Our Services</h1>
+        <h1 className="text-3xl font-semibold text-white">Our Services</h1>
         <p className="mt-2 text-lg">
           Elevate your project with our expert services.
         </p>
@@ -123,7 +116,7 @@ const ServicePage = () => {
         <h2 className="text-2xl font-semibold mb-4">Key Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="flex items-center">
-            <FaCheckCircle className="text-3xl text-blue-500 mr-2" />
+            <FaCheckCircle className="text-3xl text-green-500 mr-2" />
             <p>Responsive and user-friendly designs.</p>
           </div>
           <div className="flex items-center">
@@ -131,32 +124,31 @@ const ServicePage = () => {
             <p>Robust and secure codebase.</p>
           </div>
           <div className="flex items-center">
-            <FaCheckCircle className="text-3xl text-purple-500 mr-2" />
+            <FaCheckCircle className="text-3xl text-green-500 mr-2" />
             <p>Scalable architecture.</p>
           </div>
           <div className="flex items-center">
-            <FaCheckCircle className="text-3xl text-yellow-500 mr-2" />
+            <FaCheckCircle className="text-3xl text-green-500 mr-2" />
             <p>Seamless integration with third-party services.</p>
           </div>
           <div className="flex items-center">
-            <FaCheckCircle className="text-3xl text-red-500 mr-2" />
+            <FaCheckCircle className="text-3xl text-green-500 mr-2" />
             <p>Optimized for search engines (SEO).</p>
           </div>
           <div className="flex items-center">
-            <FaCheckCircle className="text-3xl text-orange-500 mr-2" />
+            <FaCheckCircle className="text-3xl text-green-500 mr-2" />
             <p>Regular updates and maintenance.</p>
           </div>
           <div className="flex items-center">
-            <FaCheckCircle className="text-3xl text-pink-500 mr-2" />
+            <FaCheckCircle className="text-3xl text-green-500 mr-2" />
             <p>24/7 customer support.</p>
           </div>
           <div className="flex items-center">
-            <FaCheckCircle className="text-3xl text-cyan-500 mr-2" />
+            <FaCheckCircle className="text-3xl text-green-500 mr-2" />
             <p>Competitive pricing and flexible payment options.</p>
           </div>
         </div>
       </section>
-  
 
       {/* Portfolio Showcase */}
       <section className="mt-12">
@@ -170,7 +162,9 @@ const ServicePage = () => {
               <Image
                 src={item.imageSrc}
                 alt={item.title}
-                className="w-full h-auto mb-4"
+                width={500}
+                height={300}
+                className="w-full h-auto mb-4 rounded-lg"
               />
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <p className="text-gray-300">{item.description}</p>
@@ -205,12 +199,11 @@ const ServicePage = () => {
           Contact us today to discuss your project needs.
         </p>
         <Link href="/contact">
-        <button className="mt-4 bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600">
-          Contact Us
-        </button></Link>
+          <button className="mt-4 bg-blue-500 text-white px-6 py-3 rounded-full hover:bg-blue-600">
+            Contact Us
+          </button>
+        </Link>
       </section>
-
-      
     </div>
   );
 };
